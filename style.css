@@ -1,157 +1,57 @@
-#titulo{
-    color: tomato;
+html{
+    font-family: 'Montserrat', sans-serif;
 }
-p.especial {
-    color: mediumseagreen;
+body{
+    margin: 0;
+    background-color: #efefef;
 }
-p.texto {
-    color: slateblue;
+header{
+    background-color: #23252b;
+    color: #f47521;
+    padding: 3rem 2rem;    
 }
-div p {
-    color: aquamarine;
+header h1{
+    font-size: 4rem;
+    text-align: center;
 }
-div h2, div h3{
-    color: brown;
+.container{
+    width: 400px;
+    margin: 0 auto;
 }
-*{
-    font-size: 24px;
-    /* color: black; */
-}
-
-/* esto es un comentario 
-    .color {
-        color: #F00000;
-    }
-
-    .color {
-        color: rgb(0, 0, 255);
-    }
-*/
-.color {
-    /* border: 3px #FF0000 solid; */
-    border-style: solid;
-    border-color: #0000FF;
-    border-radius: 5px;
-    border-width: 2rem;
-}
-
-#fondo {    
-    height: 200px;
-    /* background-image: url(coffee.png);
-    background-size: 100px 100px;
-    background-repeat: repeat-y;
-    background-position: center bottom; */
-    background: rgba(255,0,0,0.7) url(coffee.png) repeat-y center bottom / 100px 100px;
-    
-}
-
-.margen{
-    background-color: chocolate;
-    margin: 15px;
-    padding: 15px 15px 5px;
-    border: 3px black solid;
-    height: 100px;
-    width: 50px;
-    overflow: scroll;
-    outline: 2px red solid;
-}
-
-.text{
-    text-align: justify;
-    text-decoration: overline;
-    text-shadow: 3px 5px 5px #00f;
-    font-family: 'Roboto', sans-serif;
-}
-/*El orden de los a es sumanente importante */
-a:link {
-    color: blueviolet;
-}
-
-a:visited {
-    color: gray;
-}
-
-a:hover{
-    color: yellow;
-}
-
-a:active{
-    color: red;
-}
-
-ul{
-    background-color: cyan;
-    list-style-type: square;
-    
-    /* padding-left: 0px; 
-    list-style-position: inside;*/
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-th, td {
-    border: 1px #eee solid;
-    padding: 5px;
-}
-th{
-    background-color: tomato;
-    color: #fff;
-    text-align: left;
-}
-
-tr:nth-child(odd){
-    background-color: #eee;
-}
-
-tr:hover{
-    background-color: #aaa;
+section article{
+    transition: all 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
     cursor: pointer;
 }
-span{
-    display: block;
-    /* display: none; */
-    /* visibility: hidden; */
-    background-color: red;
-    max-width: 300px;
-    
-}
-.inline{
-    display: inline;
+
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
 }
 
-#position{
-    position: sticky;
-    left: 20px;
-    top: 25px;
+section article h2, section article p{
+    margin: 1rem;
+    text-align: justify;
 }
-.left{
-    float: left;
-    width: 200px;
-    height: 200px;
+footer{
+    background-color: #161616;
+    padding: 3rem;
+    color: #fff;
 }
-.right{
+footer section{
     float: right;
 }
-.container {
-    height: 200px;  
+footer a{
+    transition: color 0.3s ease;
+    text-decoration: none;
+    padding: 1.5rem;
+    color: #fff;
 }
-.column{
-    border: 0px #ddd solid;
-    border-radius: 5px;
+footer a:hover{
+    color: #f47521;
+}
+footer p{
     margin: 0;
-    padding: 10px 0;
-    width: 33.3%;
-}
-.inline-block{
-    display: inline-block;
-    height: 50px;
-    background-color: red;
-}
-.center{
-    padding: 50px 0;
-    width: 200px;
-    margin: 0 auto;
-    background-color: aqua;
-    text-align: center;
 }
